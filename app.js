@@ -13,7 +13,7 @@ const partnerRouter = require('./routes/partnerRouter');
 
 var app = express();
 
-const url = 'mongodb+srv://rafgui12:MjTCqWaVQ4vsy2JP@nucampsite.rwvmujq.mongodb.net/nucampsite';
+const url = 'mongodb://localhost:27017/nucampsite';
 const connect = mongoose.connect(url, {
     useCreateIndex: true,
     useFindAndModify: false,

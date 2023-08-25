@@ -8,6 +8,8 @@ const session = require('express-session');
 const FileStore = require('session-file-store')(session);
 const passport = require('passport');
 const authenticate = require('./authenticate');
+const config = require('./config.js');
+
 
 
 var indexRouter = require('./routes/index');
@@ -18,7 +20,7 @@ const partnerRouter = require('./routes/partnerRouter');
 
 var app = express();
 
-const url = 'mongodb+srv://rafgui12:MjTCqWaVQ4vsy2JP@nucampsite.rwvmujq.mongodb.net/nucampsite';
+const url = config.mongoUrl;
 const connect = mongoose.connect(url, {
     useCreateIndex: true,
     useFindAndModify: false,

@@ -1,2 +1,3 @@
-# ServerWorkshopWeek2
+# ServerWorkshopWeeks
+
 By Rafael Angulo Ealo
